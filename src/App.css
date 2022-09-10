@@ -45,7 +45,9 @@ h1{
 .main-task-list{
   width: 600px;
   min-height:500px ;
-  background-color: #d0d0d5;
+  background-color: #96b3ff
+
+  ;
   padding: 25px;
   margin:10px;
   justify-content: center;
