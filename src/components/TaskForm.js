@@ -11,19 +11,21 @@ function TaskForm(props){
         // console.log(e.target.value)
     }
 
-const handleShipping = e =>{
-    e.preventDefault(); 
-    console.log("enviando forms")
-
-    const newTask = {
-        id: uuidv4(),
-        text: input,
-        complete: false
-    }
-    //console.log(newTask)
-
-    props.onSubmit(newTask)
+    const handleShipping = e =>{
+        e.preventDefault(); 
     
+        //console.log("enviando forms")
+        if (input){
+            const newTask = {
+                id: uuidv4(),
+                text: input,
+                complete: false
+            }
+            //console.log(newTask)
+            setInput("");
+            props.onSubmit(newTask)
+        }
+     
 }
 
 
@@ -32,11 +34,13 @@ return(
               onSubmit={handleShipping}    
         >
             <input
+                id='input-task'
                 className='input-task'
                 type='text'
                 placeholder='Write a task'
                 name='text'
                 onChange={handleChange}
+                value={input}
             ></input>
             <button className='task-button'>
                 Add task
