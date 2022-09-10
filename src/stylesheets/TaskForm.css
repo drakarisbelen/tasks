@@ -10,7 +10,7 @@
     font-size: 18px;
     background-color: white;
     padding: 14px 32px 14px 16px;
-    border: 2px solid #00471b;
+    border: 2px solid #00003d;
     outline: none;
 }
 
@@ -23,6 +23,7 @@
     cursor: pointer;
     outline:none;
     color: #fff;
-    background-color: #00471b;
+    background-color: #00003d;
     text-transform: capitalize;
+    
 }
